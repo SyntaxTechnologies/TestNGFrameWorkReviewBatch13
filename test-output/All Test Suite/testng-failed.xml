@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="utils.listeners"/>
+  </listeners>
+  <test thread-count="5" name="loginTest.java(failed)">
+    <classes>
+      <class name="testCases.loginTest">
+        <methods>
+          <include name="openBrowserAndLaunchApplication"/>
+          <include name="invalidCredentials" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testCases.loginTest -->
+    </classes>
+  </test> <!-- loginTest.java(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
